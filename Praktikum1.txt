@@ -1,0 +1,53 @@
+Bemerkung: Weil es Probleme mit dem Zugang zu GitLab gab, wurde mir vom Praktikumsleiter ausnahmsweise Erlaubt, die Abgaben zunächst auf GitHub zu erledigen.
+C++ darf alternativ zu Java benutzt werden. 
+
+1
+a)Nach der Anleitung gemacht
+https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository
+
+Kollaboratoren einladen:
+auf Settings
+Access
+Collaborators
+Auf Add People klicken
+Dann die E-Mail-Adresse der Kollaboratoren eintippen und bestätigen
+
+b)erledigt.
+
+c) Branch P1 erstellt. 
+
+
+
+2a)
+Manfred Broy · Marco Kuhrmann
+Einführung in die 
+Softwaretechnik seite 3
+
+Software Engineering ist die beherrschende Disziplin bei
+der Entwicklung digitaler Systeme.
+2b)
+Manfred Broy · Marco Kuhrmann
+Einführung in die 
+Softwaretechnik seite 3
+
+ Sie umfasst die technische Realisierung (Implementierung) von Software durch Programmierung ebenso wie Fragen, in welchen Bereichen
+Software gewinnbringend eingesetzt werden kann und wie Software gestaltet werden
+muss, damit Nutzerbedürfnisse optimal adressiert werden.
+
+
+2c)
+https://www.infrasoft.at/images/downloads/uebersicht_der_uml_diagramme.pdf
+
+Die Modellelemente der UML werden nach Diagrammtypen gegliedert. Jedem Diagrammtyp liegt eine bestimmte  
+Betrachtungsweise eines Softwaresystems zu Grunde
+Die UML besteht im Wesentlichen aus 9 verschiedenen Diagrammtypen
+
+Use-Case-Diagramm
+Klassendiagramm
+Paketdiagramm
+Kollaborationsdiagramm
+Aktivitätsdiagramm
+Sequenzdiagramm
+Zustandsdiagramm
+Komponentendiagramm
+Verteilungsdiagramm
