@@ -1,0 +1,34 @@
+#include <iostream>
+
+bool switching(bool i);
+
+int main(){
+    int x = 1;
+    char s;
+   const char *t = "Y";
+for(bool i=false;x>0;x++) {
+std::cout<<"do you want to turn the switch?[Y/N]"<<std::endl;
+std::cin>>s;
+if ((*t)==s){
+i=switching(i);
+}
+else{
+    break;
+    
+}
+std::cout<<i<<std::endl;
+}
+
+    return 0;
+}
+
+bool switching(bool i){
+    if (i==false){
+        i = true;
+        
+    }
+        else{
+            i=false;
+        } 
+    return i;
+}
