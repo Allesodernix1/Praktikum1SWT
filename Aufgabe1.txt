@@ -1,0 +1,95 @@
+#include <iostream>
+
+//Applikation kann auf Geburtsdatum, Geburtsort, ID-Nummer und Wohnort erweitert werden
+
+class Person {
+private:
+    std::string Name;
+    std::string Familienstand;
+    std::string Geschlecht;
+    std::string Partner;
+    std::string Partnergeschlecht;
+
+    Person();
+
+    ~Person();
+
+public:
+
+    void Ersteintrag() {
+
+        std::cout << "bitte geben Sie den Namen der Person an und drücken Sie Enter" << std::endl;
+        std::cin >> Name;
+        std::cout << "bitte geben Sie das Geschlecht der Person an und drücken Sie Enter" << std::endl;
+        std::cin >> Geschlecht;
+        std::cout << "bitte geben Sie den Familienstand der Person an und drücken Sie Enter" << std::endl;
+        std::cin >> Familienstand;
+
+        if (Familienstand == "verheiratet") {
+            std::cout << "bitte geben Sie den Partner der Person an und drücken Sie Enter" << std::endl;
+            std::cin >> Partner;
+            std::cout << "bitte geben Sie das Geschlecht des Partners an und drücken Sie Enter" << std::endl;
+            std::cin >> Partnergeschlecht;
+
+        }
+    }
+
+    void Tod() {
+        if (Familienstand == "verheiratet") {
+            std::cout<<"Bitte den Familienstand von"<< Partner <<" umändern"<<std::endl;
+            //Hier gehört eigentlich eine Funktion hin, die den Familienstand beim Partner ebenfalls umsetzt
+        }
+        Familienstand = "verstorben";
+        std::cout << " Sie haben eingetragen, dass die Person" << Familienstand << "ist" << std::endl;
+
+    }
+
+    void Heirat(){
+        std::cout << "bitte geben Sie den Partner der Person an und drücken Sie Enter" << std::endl;
+        std::cin >> Partner;
+        std::cout << "bitte geben Sie das Geschlecht des Partners an und drücken Sie Enter" << std::endl;
+        std::cin >> Partnergeschlecht;
+        Familienstand = "veheiratet";
+
+        std::cout<<"Bitte den Familienstand von"<< Partner <<" umändern"<<std::endl;
+        //Hier gehört eigentlich eine Funktion hin, die den Familienstand beim Partner ebenfalls umsetzt
+    }
+
+    void Tod_des_Partners(){
+        if (Familienstand=="verheiratet"){
+            Familienstand = "verwitwet";
+            std::cout<<"Bitte die Angaben von"<< Partner <<" umändern"<<std::endl;
+            //Hier gehört eigentlich eine Funktion hin, die die Angaben beim Partner ebenfalls umsetzt
+
+            Partner="keiner";
+            Partnergeschlecht="keiner";
+        }else{
+            std::cout<<Name<<" hat keinen Partner!"<<std::endl;
+        }
+    };
+
+    void Scheidung(){
+        if (Familienstand=="verheiratet"){
+            Familienstand = "geschieden";
+            std::cout<<"Bitte die Angaben von"<< Partner <<" umändern"<<std::endl;
+            //Hier gehört eigentlich eine Funktion hin, die die Angaben beim Partner ebenfalls umsetzt
+
+            Partner="keiner";
+            Partnergeschlecht="keiner";
+        }else{
+            std::cout<<Name<<" hat keinen Partner!"<<std::endl;
+        }
+    }
+};
+
+Person::Person(){
+    Name="undefiniert";
+    Familienstand="ledig";
+    Geschlecht="undefiniert";
+}
+Person::~Person(){
+}
+
+int main(){
+return 0;
+}
